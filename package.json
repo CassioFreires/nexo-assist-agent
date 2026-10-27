@@ -1,0 +1,13 @@
+{
+  "name": "nexo-assist",
+  "private": true,
+  "workspaces": ["api", "web"],
+  "scripts": {
+    "dev:api": "npm run dev -w api",
+    "dev:web": "npm run dev -w web",
+    "build": "npm run build -w web",
+    "start": "npm run start -w api",
+    "test": "npm run test -w api",
+    "typecheck": "npm run typecheck -w api && npm run typecheck -w web"
+  }
+}
